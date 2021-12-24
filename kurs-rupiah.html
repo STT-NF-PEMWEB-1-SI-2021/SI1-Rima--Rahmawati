@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kurs</title>
+        <style>
+            body{
+                background-color: wheat;
+            }
+            #box{
+                background-color: skyblue;
+                position: fixed;
+                left: 25%;border-radius: 8px; width: 500px;margin: 15px; border: 2px solid; padding: 20px 40px;
+            }
+        </style>
+        <script>
+            function Dollus(){
+                const USD = 9.915
+                let hitdoll = document.getElementById("hitdoll").innerHTML=(dollus.value)/USD;
+            }
+            function Singapore(){
+                const Singap = 13.472
+                let hitsing = document.getElementById("hitsing").innerHTML=(sgp.value)/Singap;
+            }
+            function malay(){
+                const Mly = 874
+                let ringgit = document.getElementById("ringgit").innerHTML=(mly.value)/Mly;
+            }
+            function jepang(){
+                const Jpg = 120
+                let yen = document.getElementById("yen").innerHTML=(jpg.value)/Jpg;
+            }
+            function EURO(){
+                const nilai = 15.888
+                let Eo = document.getElementById("Eo").innerHTML=(euro.value)/nilai;
+            }
+            function riyal(){
+                const hit = 3.592
+                let saudi = document.getElementById("saudi").innerHTML=(arab.value)/hit;
+            }
+        </script>
+
+    </head>
+    <body>
+        <div id="box">
+        <h2>Menghitung Kurs Mata Uang Asing ke Rupiah</h2>
+        <br/>
+        <p>DOLLAR US</p>
+        <input type="number" id="dollus" placeholder="masukkan nilai">
+        <button onclick="Dollus()">RUPIAH</button>
+        = <span id="hitdoll"></span>
+        <hr/>
+        <P>DOLLAR SINGAPORE</P>
+        <input type="number" id="sgp" placeholder="masukkan nilai">
+        <button onclick="Singapore()">RUPIAH</button>
+        = <span id="hitsing"></span>
+        <hr/>
+        <p>RINGGIT MALAYSIA</p>
+        <input type="number" id="mly" placeholder="masukkan nilai">
+        <button onclick="malay()">RUPIAH</button>
+        = <span id="ringgit"></span>
+        <hr/>
+        <p>YEN JEPANG</p>
+        <input type="number" id="jpg" placeholder="masukkan nilai">
+        <button onclick="jepang()">RUPIAH</button>
+        = <span id="yen"></span>
+        <hr/>
+        <p>EURO</p>
+        <input type="number" id="euro" placeholder="masukkan nilai">
+        <button onclick="EURO()">RUPIAH</button>
+        = <span id="Eo"></span>
+        <hr/>
+        <p>RIYAL ARAB SAUDI</p>
+        <input type="number" id="arab" placeholder="masukkan nilai">
+        <button onclick="riyal()">RUPIAH</button>
+        = <span id="saudi"></span>
+        </div>
+    </body>
+</html>

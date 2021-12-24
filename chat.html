@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chat message</title>
+        <style>
+            body{
+                margin: 0 auto;
+                max-width: 800px;
+                padding: 0 20px;
+            }
+            .container{
+                border: 2px solid #dedede;
+                background-color: #f1f1f1;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            .darker{
+                border-color: #ccc;
+                background-color: #ddd;
+            }
+            .container::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .container img.right{
+                float: right;
+                margin-left: 20px;
+                margin-right: 0;
+            }
+            .container img{
+                float: left;
+                max-width: 60px;
+                width: 100%;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+            .time-right{
+                float: right;
+                color: #aaa;
+            }
+            .time-left{
+                float: left;
+                color: #999;
+            }
+            input{
+                padding: 10px;border-radius: 5px;margin: 10px 0;width: 95%;border: 1px solid;
+
+            }
+            button{
+                padding: 10px;border-radius: 5px;margin: 10px 0;width: 40%;border: 1px solid;background: aquamarine;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>chat message</h2>
+        <div class="container">
+            <img src="foto/ab.jpg" alt="Avatar" style="width: 100%;">
+            <p>Assalamualaikum Ayu, gimana kabarnya?</p>
+            <span class="time-right">08:10</span>
+        </div>
+        
+        <div class="container darker">
+            <img src="foto/ayu.jpg" alt="Avatar" class="right" style="width: 100%;">
+            <p>Waalaikum salam rim, kabar baik.</p>
+            <span class="time-left">08:12</span>
+        </div>
+
+        <div class="container">
+            <img src="foto/ab.jpg" alt="Avatar" style="width: 100%;">
+            <p>hehehhe</p>
+            <span class="time-right">08:10</span>
+        </div>
+
+        <div class="container darker">
+            <img src="foto/ayu.jpg" alt="Avatar" class="right" style="width: 100%;">
+            <p>Hahahaha</p>
+            <span class="time-left">08:12</span>
+        </div>
+
+        <div class="container">
+            <input type="text">
+            <button onclick="">Kirim</button>
+
+        </div>
+
+
+
+
+    </body>
+</html>
